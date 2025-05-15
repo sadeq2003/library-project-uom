@@ -1,0 +1,130 @@
+:root {
+    --primary-color: #4CAF50;
+    --background-gradient: linear-gradient(135deg, #1e3c72, #2a5298);
+    --text-color: #ffffff;
+    --input-background: rgba(255, 255, 255, 0.1);
+    --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+a {
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-color);
+    text-shadow: 0 0 10px var(--primary-color);
+}
+
+body {
+    background: var(--background-gradient);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contian {
+    display: grid;
+    background-color: var(--input-background);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+    width: 350px;
+}
+
+.input {
+    display: grid;
+    gap: 15px;
+    text-align: center;
+}
+
+.input h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.input .input-box {
+    position: relative;
+}
+
+.input i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--primary-color);
+}
+
+.input input {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--input-background);
+    box-shadow: var(--box-shadow);
+    font-size: 1em;
+    color: var(--text-color);
+    outline: none;
+}
+
+.input input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9em;
+}
+
+.remamber {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+    margin: 10px 0;
+}
+
+.contian button {
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contian button:hover {
+    background-color: #388e3c;
+}
+
+.register {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.register a {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Radio Button Style */
+.inputradio {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.inputradio input[type="radio"] {
+    margin: 0 5px;
+}

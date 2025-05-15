@@ -1,0 +1,180 @@
+:root{
+    --forncolor:#00ff00;
+    --boxshdow:0px 0px 8px rgb(55, 36, 2);
+    --color:#ffffffbb;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+    text-decoration: none;
+    color: var(--color);
+    
+    
+}
+a{
+    text-transform: none;
+    color: #ffffff;
+}
+a:hover{
+    transition: 1s height ;
+box-shadow: var(--boxshdow);
+}
+body{
+    background: linear-gradient(to left top , #86a18a, #3434b4a9);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    color: var(--color);
+
+}
+
+.contian
+{display: grid;
+background-color:transparent;
+backdrop-filter: blur(100px);
+padding: 60px 60px;
+border: 1px solid #ffffff;
+border-radius: 10px;
+color: #ffffff;
+
+}
+
+.input{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10px;
+    
+
+}
+
+.input .input-box{
+    position: relative;
+}
+.input i{
+    color: aliceblue;
+    position: absolute;
+    right: 15px;
+    top:30%;
+
+}
+.input h1{
+    margin-bottom: 15px;
+    font-weight:bold;
+    font-size: 2.3em;
+    color: #ffffff;
+    
+}
+.input input{
+    width: 300px;
+    margin:7px;
+    font-weight: 500;
+    background-color: 
+    transparent;
+    color: #ffffff;
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: var(--boxshdow);
+    outline: none;
+    cursor: pointer;
+    outline: none;
+    border-style: none;
+}
+::placeholder{
+    color:var(--boxshdow);
+    font-size: 14px;
+}
+.remamber{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+
+}
+
+.contian button
+{
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: var(--boxshdow);
+    font-weight: 600;
+    margin: 14px 0px;
+    background-color: #01540c;
+    font-weight: 900;
+    font-size: 1.05em;
+
+}
+.contian button:hover{
+    background-color:rgba(7, 46, 68, 0.999);
+    
+}
+.register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+
+
+
+
+/* هنين الملف الثاني */
+.inputradio{
+position: absolute;
+top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .contain{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 150px;
+}
+.button{
+    padding: 30px;
+    background-color: rgba(0, 255, 255, 0.426);
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px red;
+    transition: background-color 1s;
+    text-align: center;
+    
+}
+.button:hover{
+    background-color: aqua;
+    transition: 1.4s;
+}
+
+
+.h1{
+    background-color: aqua;
+    border-radius: 5px;
+    box-shadow: 1px 2px 20px red; 
+    padding: 20px;
+    text-align: center;
+    
+} */

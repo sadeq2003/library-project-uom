@@ -1,0 +1,124 @@
+:root {
+    --primary-color: #3498db; /* الأزرق الهادئ */
+    --background-color: #ecf0f1; /* الخلفية الفاتحة */
+    --button-color: #2980b9; /* زر باللون الأزرق الداكن */
+    --hover-color: #1f618d; /* تأثير التمرير */
+    --text-color: #2c3e50; /* اللون الداكن للنص */
+    --border-radius: 12px; /* منحنيات الأزرار والإطارات */
+    --shadow-color: rgba(0, 0, 0, 0.1); /* تأثير الظلال */
+    --font-main: 'Poppins', sans-serif; /* الخط الأساسي */
+    --font-title: 'Merriweather', serif; /* خط العنوان */
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 30px var(--shadow-color);
+    transition: transform 0.4s ease-in-out;
+    di
+}
+
+.hero:hover {
+    transform: translateY(-10px);
+}
+
+h1 {
+    font-size: 2.4em;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: var(--font-title);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.input-box {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 16px 40px 16px 20px; /* إضافة مسافة للأيقونة */
+    font-size: 1.1em;
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    background-color: #f9f9f9;
+    color: var(--text-color);
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-box input:focus {
+    border-color: var(--button-color);
+    box-shadow: 0 0 10px var(--button-color);
+}
+
+.input-box i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--primary-color);
+    font-size: 1.4em; /* تحسين حجم الأيقونة */
+}
+
+button {
+    width: 100%;
+    padding: 16px;
+    background-color: var(--button-color);
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: var(--border-radius);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--hover-color);
+    transform: translateY(-5px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 600px) {
+    .hero {
+        padding: 40px 30px;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    .input-box input {
+        padding: 16px 30px 16px 20px; /* تحسين المسافات للأيقونة */
+        font-size: 1em;
+    }
+
+    button {
+        padding: 14px;
+        font-size: 1.1em;
+    }
+}

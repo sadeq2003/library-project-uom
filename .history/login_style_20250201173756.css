@@ -1,0 +1,158 @@
+:root {
+    --primary-color: #1DB954;  /* لون عصري مستوحى من الخلفيات المضيئة */
+    --secondary-color: #121212; /* لون داكن للسطح لتعزيز تباين النصوص */
+    --accent-color: #F1C40F;   /* لون مميز للتأكيد */
+    --text-color: #FFFFFF;     /* النصوص باللون الأبيض */
+    --input-background: rgba(255, 255, 255, 0.1);  /* خلفية شفافة */
+    --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); /* تأثير الظل العميق */
+    --button-hover: #FF5733;   /* لون الزر عند التمرير */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+body {
+    background: #121212; /* خلفية داكنة جذابة */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    background: var(--secondary-color);
+    backdrop-filter: blur(10px);
+    padding: 50px 40px;
+    border-radius: 25px;
+    box-shadow: var(--box-shadow);
+    width: 400px;
+    max-width: 100%;
+    z-index: 10;
+    overflow: hidden;
+    animation: fadeIn 1.5s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+h1 {
+    font-size: 3em;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 0 0 15px #FF5733, 0 0 30px #FF5733, 0 0 45px #FF5733;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 25px;
+    transition: transform 0.3s ease;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 18px;
+    border: 2px solid var(--primary-color);
+    border-radius: 12px;
+    background-color: var(--input-background);
+    color: var(--text-color);
+    font-size: 1.1em;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-box input:focus {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 87, 51, 0.6);
+    border-color: var(--accent-color);
+}
+
+.input-box input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.input-box i {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--primary-color);
+}
+
+button {
+    width: 100%;
+    padding: 18px;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: var(--button-hover);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(255, 87, 51, 0.5);
+}
+
+.register {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.register a {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.register a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.radio-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.radio-container input[type="radio"] {
+    margin: 0 5px;
+    accent-color: var(--primary-color);
+}

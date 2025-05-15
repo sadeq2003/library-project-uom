@@ -1,0 +1,70 @@
+:root {
+    --primary-color: #9b59b6;
+    --background-color: #2d3436;
+    --text-color: #ecf0f1;
+    --button-color: #8e44ad;
+    --hover-color: #9b59b6;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Verdana', sans-serif;
+}
+
+.container {
+    background-color: #34495e;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 420px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 25px;
+    text-shadow: 0 0 5px #ecf0f1, 0 0 10px #ecf0f1;
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    background-color: #2d3436;
+    color: var(--text-color);
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-box input:focus {
+    border-color: var(--button-color);
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--button-color);
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--hover-color);
+}

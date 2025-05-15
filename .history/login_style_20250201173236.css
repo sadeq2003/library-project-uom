@@ -1,0 +1,160 @@
+:root {
+    --primary-color: #FF5722;
+    --background-gradient: linear-gradient(135deg, #ff8c00, #f44336);
+    --text-color: #f4f4f4;
+    --input-background: rgba(255, 255, 255, 0.15);
+    --box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+    --hover-color: #e64a19;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+a {
+    color: var(--text-color);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-color);
+    text-shadow: 0 0 12px var(--primary-color);
+    transform: scale(1.1);
+}
+
+body {
+    background: var(--background-gradient);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    background-color: var(--input-background);
+    backdrop-filter: blur(25px);
+    padding: 50px 30px;
+    border-radius: 12px;
+    box-shadow: var(--box-shadow);
+    width: 400px;
+    max-width: 100%;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    font-size: 2.5em;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-image: linear-gradient(135deg, #ff8c00, #f44336);
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: text-glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes text-glow {
+    0% {
+        text-shadow: 0 0 10px #ff5722, 0 0 20px #ff5722, 0 0 30px #ff5722;
+    }
+    100% {
+        text-shadow: 0 0 20px #ff5722, 0 0 30px #ff5722, 0 0 40px #ff5722;
+    }
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    background-color: var(--input-background);
+    color: var(--text-color);
+    font-size: 1.1em;
+    outline: none;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.input-box input:focus {
+    border-color: #f44336;
+    transform: scale(1.05);
+}
+
+.input-box input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.input-box i {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--primary-color);
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #e64a19;
+    transform: scale(1.05);
+}
+
+.register {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.register a {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
+.radio-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.radio-container input[type="radio"] {
+    margin: 0 5px;
+    accent-color: var(--primary-color);
+}

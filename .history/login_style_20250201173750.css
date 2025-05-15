@@ -1,0 +1,70 @@
+:root {
+    --primary-color: #3e8e41;  /* لون أخضر داكن يناسب الكتب الطبيعية */
+    --secondary-color: #f4f4f4; /* خلفية ناعمة */
+    --text-color: #212121;      /* نص مظلم لسهولة القراءة */
+    --button-color: #4CAF50;    /* زر بلون أخضر طبيعي */
+    --hover-color: #45a049;     /* تأثير التمرير */
+}
+
+body {
+    background: #f4f4f4;  /* خلفية ناعمة مع درجات ألوان هادئة */
+    font-family: 'Merriweather', serif;  /* خط يشبه كتب الأدب */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: var(--secondary-color);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 2.5em;
+    text-align: center;
+    font-family: 'Georgia', serif;
+    margin-bottom: 25px;
+}
+
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1em;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    background-color: #fff;
+    color: var(--text-color);
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-box input:focus {
+    border-color: var(--button-color);
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: var(--button-color);
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--hover-color);
+}
